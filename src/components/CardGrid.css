@@ -6,3 +6,10 @@
   max-width: 900px;
   margin: 0 auto;
 }
+
+@media (max-width: 650px) {
+  .card-grid {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}

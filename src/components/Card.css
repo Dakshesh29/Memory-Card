@@ -31,3 +31,16 @@
   font-weight: bold;
   color: #e0e0e0;
 }
+
+@media (max-width: 650px) {
+  .card {
+    padding: 0.5rem;
+  }
+  .card-image-container img {
+    width: 72px;
+    height: 72px;
+  }
+  .card-name {
+    font-size: 0.9rem;
+  }
+}

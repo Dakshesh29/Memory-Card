@@ -13,3 +13,12 @@
 .score-item strong {
   color: #e94560;
 }
+
+@media (max-width: 650px) {
+  .scoreboard {
+    gap: 15px;
+    font-size: 1rem;
+    justify-content: center;
+    width: 100%;
+  }
+}

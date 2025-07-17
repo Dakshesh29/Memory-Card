@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1a1a2e; /* Dark blue background */
+  background-color: #1a1a2e;
   color: #e0e0e0;
 }
 
@@ -15,6 +15,7 @@ body {
   align-items: center;
   padding: 20px;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .app-header {
@@ -28,11 +29,61 @@ body {
   background-color: #16213e;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
 }
 
 .app-header h1 {
   margin: 0;
   font-size: 1.5rem;
-  color: #0f3460;
   color: #e94560;
+}
+
+.status-message {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 4rem;
+  text-align: center;
+  color: #e0e0e0;
+  padding: 0 1rem;
+}
+
+.status-message.error {
+  color: #e94560;
+}
+
+@media (max-width: 650px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .app-header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .app-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .status-message {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+}
+
+.game-instructions {
+  margin: 0;
+  color: #e0e0e0;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 500px;
+}
+
+@media (max-width: 650px) {
+  .game-instructions {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
 }
