@@ -1,0 +1,33 @@
+.card {
+  background-color: #16213e;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(233, 69, 96, 0.2);
+}
+
+.card-image-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.card-image-container img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+}
+
+.card-name {
+  margin: 0;
+  font-weight: bold;
+  color: #e0e0e0;
+}

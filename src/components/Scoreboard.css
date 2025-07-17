@@ -1,0 +1,15 @@
+.scoreboard {
+  display: flex;
+  gap: 20px;
+  font-size: 1.1rem;
+}
+
+.score-item {
+  background-color: #0f3460;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.score-item strong {
+  color: #e94560;
+}
